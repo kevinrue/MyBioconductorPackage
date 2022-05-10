@@ -75,22 +75,38 @@ check for any updates on how to cite **MyBioconductorPackage**.
 
 ``` r
 print(citation('MyBioconductorPackage'), bibtex = TRUE)
-#> It is recommended to use 'given' instead of 'middle'.
 #> 
-#> To cite package 'MyBioconductorPackage' in publications use:
-#> 
-#>   Kevin Christophe Rue (2022). MyBioconductorPackage: Demonstration of
-#>   a Bioconductor Package. R package version 0.99.0.
-#>   https://github.com/kevinrue/MyBioconductorPackage
+#> kevinrue (2022). _Demonstration of a Bioconductor Package_. doi:
+#> 10.18129/B9.bioc.MyBioconductorPackage (URL:
+#> https://doi.org/10.18129/B9.bioc.MyBioconductorPackage),
+#> https://github.com/kevinrue/MyBioconductorPackage/MyBioconductorPackage
+#> - R package version 0.99.0, <URL:
+#> http://www.bioconductor.org/packages/MyBioconductorPackage>.
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
 #>   @Manual{,
-#>     title = {MyBioconductorPackage: Demonstration of a Bioconductor Package},
-#>     author = {Kevin Christophe Rue},
+#>     title = {Demonstration of a Bioconductor Package},
+#>     author = {{kevinrue}},
 #>     year = {2022},
-#>     note = {R package version 0.99.0},
-#>     url = {https://github.com/kevinrue/MyBioconductorPackage},
+#>     url = {http://www.bioconductor.org/packages/MyBioconductorPackage},
+#>     note = {https://github.com/kevinrue/MyBioconductorPackage/MyBioconductorPackage - R package version 0.99.0},
+#>     doi = {10.18129/B9.bioc.MyBioconductorPackage},
+#>   }
+#> 
+#> kevinrue (2022). "Demonstration of a Bioconductor Package." _bioRxiv_.
+#> doi: 10.1101/TODO (URL: https://doi.org/10.1101/TODO), <URL:
+#> https://www.biorxiv.org/content/10.1101/TODO>.
+#> 
+#> A BibTeX entry for LaTeX users is
+#> 
+#>   @Article{,
+#>     title = {Demonstration of a Bioconductor Package},
+#>     author = {{kevinrue}},
+#>     year = {2022},
+#>     journal = {bioRxiv},
+#>     doi = {10.1101/TODO},
+#>     url = {https://www.biorxiv.org/content/10.1101/TODO},
 #>   }
 ```
 

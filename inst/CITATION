@@ -7,7 +7,7 @@ pkgVer <- function(pkg) {
 c(
 
     bibentry(bibtype="manual",
-        title = "",
+        title = "Demonstration of a Bioconductor Package",
         author = personList(
             as.person("kevinrue")
         ),
@@ -17,7 +17,7 @@ c(
         doi = '10.18129/B9.bioc.MyBioconductorPackage'
     ),
     bibentry(bibtype="article",
-        title = "",
+        title = "Demonstration of a Bioconductor Package",
         author = personList(
             as.person("kevinrue")
         ),
