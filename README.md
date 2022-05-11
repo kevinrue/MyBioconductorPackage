@@ -11,6 +11,7 @@ issues](https://img.shields.io/github/issues/kevinrue/MyBioconductorPackage)](ht
 pulls](https://img.shields.io/github/issues-pr/kevinrue/MyBioconductorPackage)](https://github.com/kevinrue/MyBioconductorPackage/pulls)
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![R-CMD-check-bioc](https://github.com/kevinrue/MyBioconductorPackage/workflows/R-CMD-check-bioc/badge.svg)](https://github.com/kevinrue/MyBioconductorPackage/actions)
 <!-- badges: end -->
 
 The goal of `MyBioconductorPackage` is to …
