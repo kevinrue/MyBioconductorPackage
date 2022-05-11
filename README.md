@@ -12,6 +12,8 @@ pulls](https://img.shields.io/github/issues-pr/kevinrue/MyBioconductorPackage)](
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![R-CMD-check-bioc](https://github.com/kevinrue/MyBioconductorPackage/workflows/R-CMD-check-bioc/badge.svg)](https://github.com/kevinrue/MyBioconductorPackage/actions)
+[![Codecov test
+coverage](https://codecov.io/gh/kevinrue/MyBioconductorPackage/branch/main/graph/badge.svg)](https://app.codecov.io/gh/kevinrue/MyBioconductorPackage?branch=main)
 <!-- badges: end -->
 
 The goal of `MyBioconductorPackage` is to …
