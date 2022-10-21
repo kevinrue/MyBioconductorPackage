@@ -82,32 +82,32 @@
 </h2>
 <p>Get the latest stable <code>R</code> release from <a href="http://cran.r-project.org/" class="external-link">CRAN</a>. Then install <code>MyBioconductorPackage</code> from <a href="http://bioconductor.org/" class="external-link">Bioconductor</a> using the following code:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw">if</span> <span class="op">(</span><span class="op">!</span><span class="fu"><a href="https://rdrr.io/r/base/ns-load.html" class="external-link">requireNamespace</a></span><span class="op">(</span><span class="st">"BiocManager"</span>, quietly <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span>
-    <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"BiocManager"</span><span class="op">)</span>
-<span class="op">}</span>
-
-<span class="fu">BiocManager</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/BiocManager/man/install.html" class="external-link">install</a></span><span class="op">(</span><span class="st">"MyBioconductorPackage"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="kw">if</span> <span class="op">(</span><span class="op">!</span><span class="fu"><a href="https://rdrr.io/r/base/ns-load.html" class="external-link">requireNamespace</a></span><span class="op">(</span><span class="st">"BiocManager"</span>, quietly <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span></span>
+<span>    <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"BiocManager"</span><span class="op">)</span></span>
+<span><span class="op">}</span></span>
+<span></span>
+<span><span class="fu">BiocManager</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/BiocManager/man/install.html" class="external-link">install</a></span><span class="op">(</span><span class="st">"MyBioconductorPackage"</span><span class="op">)</span></span></code></pre></div>
 <p>And the development version from <a href="https://github.com/kevinrue/MyBioconductorPackage" class="external-link">GitHub</a> with:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">BiocManager</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/BiocManager/man/install.html" class="external-link">install</a></span><span class="op">(</span><span class="st">"kevinrue/MyBioconductorPackage"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">BiocManager</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/BiocManager/man/install.html" class="external-link">install</a></span><span class="op">(</span><span class="st">"kevinrue/MyBioconductorPackage"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
 </h2>
 <p>This is a basic example which shows you how to solve a common problem:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="st"><a href="https://github.com/kevinrue/MyBioconductorPackage" class="external-link">"MyBioconductorPackage"</a></span><span class="op">)</span>
-<span class="co">## basic example code</span></code></pre></div>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="st"><a href="https://github.com/kevinrue/MyBioconductorPackage" class="external-link">"MyBioconductorPackage"</a></span><span class="op">)</span></span>
+<span><span class="co">## basic example code</span></span></code></pre></div>
 <p>What is special about using <code>README.Rmd</code> instead of just <code>README.md</code>? You can include R chunks like so:</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">cars</span><span class="op">)</span>
-<span class="co">#&gt;      speed           dist       </span>
-<span class="co">#&gt;  Min.   : 4.0   Min.   :  2.00  </span>
-<span class="co">#&gt;  1st Qu.:12.0   1st Qu.: 26.00  </span>
-<span class="co">#&gt;  Median :15.0   Median : 36.00  </span>
-<span class="co">#&gt;  Mean   :15.4   Mean   : 42.98  </span>
-<span class="co">#&gt;  3rd Qu.:19.0   3rd Qu.: 56.00  </span>
-<span class="co">#&gt;  Max.   :25.0   Max.   :120.00</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">cars</span><span class="op">)</span></span>
+<span><span class="co">#&gt;      speed           dist       </span></span>
+<span><span class="co">#&gt;  Min.   : 4.0   Min.   :  2.00  </span></span>
+<span><span class="co">#&gt;  1st Qu.:12.0   1st Qu.: 26.00  </span></span>
+<span><span class="co">#&gt;  Median :15.0   Median : 36.00  </span></span>
+<span><span class="co">#&gt;  Mean   :15.4   Mean   : 42.98  </span></span>
+<span><span class="co">#&gt;  3rd Qu.:19.0   3rd Qu.: 56.00  </span></span>
+<span><span class="co">#&gt;  Max.   :25.0   Max.   :120.00</span></span></code></pre></div>
 <p>You’ll still need to render <code>README.Rmd</code> regularly, to keep <code>README.md</code> up-to-date.</p>
 <p>You can also embed plots, for example:</p>
 <p><img src="reference/figures/README-pressure-1.png" width="100%"></p>
@@ -118,40 +118,40 @@
 </h2>
 <p>Below is the citation output from using <code>citation('MyBioconductorPackage')</code> in R. Please run this yourself to check for any updates on how to cite <strong>MyBioconductorPackage</strong>.</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/utils/citation.html" class="external-link">citation</a></span><span class="op">(</span><span class="st">'MyBioconductorPackage'</span><span class="op">)</span>, bibtex <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; kevinrue (2022). _Demonstration of a Bioconductor Package_. doi:</span>
-<span class="co">#&gt; 10.18129/B9.bioc.MyBioconductorPackage (URL:</span>
-<span class="co">#&gt; https://doi.org/10.18129/B9.bioc.MyBioconductorPackage),</span>
-<span class="co">#&gt; https://github.com/kevinrue/MyBioconductorPackage/MyBioconductorPackage</span>
-<span class="co">#&gt; - R package version 0.99.0, &lt;URL:</span>
-<span class="co">#&gt; http://www.bioconductor.org/packages/MyBioconductorPackage&gt;.</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; A BibTeX entry for LaTeX users is</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt;   @Manual{,</span>
-<span class="co">#&gt;     title = {Demonstration of a Bioconductor Package},</span>
-<span class="co">#&gt;     author = {{kevinrue}},</span>
-<span class="co">#&gt;     year = {2022},</span>
-<span class="co">#&gt;     url = {http://www.bioconductor.org/packages/MyBioconductorPackage},</span>
-<span class="co">#&gt;     note = {https://github.com/kevinrue/MyBioconductorPackage/MyBioconductorPackage - R package version 0.99.0},</span>
-<span class="co">#&gt;     doi = {10.18129/B9.bioc.MyBioconductorPackage},</span>
-<span class="co">#&gt;   }</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; kevinrue (2022). "Demonstration of a Bioconductor Package." _bioRxiv_.</span>
-<span class="co">#&gt; doi: 10.1101/TODO (URL: https://doi.org/10.1101/TODO), &lt;URL:</span>
-<span class="co">#&gt; https://www.biorxiv.org/content/10.1101/TODO&gt;.</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; A BibTeX entry for LaTeX users is</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt;   @Article{,</span>
-<span class="co">#&gt;     title = {Demonstration of a Bioconductor Package},</span>
-<span class="co">#&gt;     author = {{kevinrue}},</span>
-<span class="co">#&gt;     year = {2022},</span>
-<span class="co">#&gt;     journal = {bioRxiv},</span>
-<span class="co">#&gt;     doi = {10.1101/TODO},</span>
-<span class="co">#&gt;     url = {https://www.biorxiv.org/content/10.1101/TODO},</span>
-<span class="co">#&gt;   }</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/utils/citation.html" class="external-link">citation</a></span><span class="op">(</span><span class="st">'MyBioconductorPackage'</span><span class="op">)</span>, bibtex <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; kevinrue (2022). _Demonstration of a Bioconductor Package_. doi:</span></span>
+<span><span class="co">#&gt; 10.18129/B9.bioc.MyBioconductorPackage (URL:</span></span>
+<span><span class="co">#&gt; https://doi.org/10.18129/B9.bioc.MyBioconductorPackage),</span></span>
+<span><span class="co">#&gt; https://github.com/kevinrue/MyBioconductorPackage/MyBioconductorPackage</span></span>
+<span><span class="co">#&gt; - R package version 0.99.0, &lt;URL:</span></span>
+<span><span class="co">#&gt; http://www.bioconductor.org/packages/MyBioconductorPackage&gt;.</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; A BibTeX entry for LaTeX users is</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt;   @Manual{,</span></span>
+<span><span class="co">#&gt;     title = {Demonstration of a Bioconductor Package},</span></span>
+<span><span class="co">#&gt;     author = {{kevinrue}},</span></span>
+<span><span class="co">#&gt;     year = {2022},</span></span>
+<span><span class="co">#&gt;     url = {http://www.bioconductor.org/packages/MyBioconductorPackage},</span></span>
+<span><span class="co">#&gt;     note = {https://github.com/kevinrue/MyBioconductorPackage/MyBioconductorPackage - R package version 0.99.0},</span></span>
+<span><span class="co">#&gt;     doi = {10.18129/B9.bioc.MyBioconductorPackage},</span></span>
+<span><span class="co">#&gt;   }</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; kevinrue (2022). "Demonstration of a Bioconductor Package." _bioRxiv_.</span></span>
+<span><span class="co">#&gt; doi: 10.1101/TODO (URL: https://doi.org/10.1101/TODO), &lt;URL:</span></span>
+<span><span class="co">#&gt; https://www.biorxiv.org/content/10.1101/TODO&gt;.</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; A BibTeX entry for LaTeX users is</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt;   @Article{,</span></span>
+<span><span class="co">#&gt;     title = {Demonstration of a Bioconductor Package},</span></span>
+<span><span class="co">#&gt;     author = {{kevinrue}},</span></span>
+<span><span class="co">#&gt;     year = {2022},</span></span>
+<span><span class="co">#&gt;     journal = {bioRxiv},</span></span>
+<span><span class="co">#&gt;     doi = {10.1101/TODO},</span></span>
+<span><span class="co">#&gt;     url = {https://www.biorxiv.org/content/10.1101/TODO},</span></span>
+<span><span class="co">#&gt;   }</span></span></code></pre></div>
 <p>Please note that the <code>MyBioconductorPackage</code> was only made possible thanks to many other R and bioinformatics software authors, which are cited either in the vignettes and/or the paper(s) describing this package.</p>
 </div>
 <div class="section level2">
@@ -201,6 +201,7 @@
 <ul class="list-unstyled">
 <li><a href="CONTRIBUTING.html">Contributing guide</a></li>
 <li><a href="CODE_OF_CONDUCT.html">Code of conduct</a></li>
+<li><a href="SUPPORT.html">Getting help</a></li>
 </ul>
 </div>
 
@@ -240,7 +241,7 @@
 
 <div class="pkgdown">
   <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.3.</p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
 </div>
 
       </footer>
